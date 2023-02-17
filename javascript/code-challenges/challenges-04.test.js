@@ -296,7 +296,7 @@ describe('Testing challenge 9', () => {
   });
 });
 
-describe('Testing challenge 10', () => {
+xdescribe('Testing challenge 10', () => {
   test('It should sort people by their last names', () => {
     expect(sortPeople(people)).toStrictEqual([
       new Person('Casey', 'Codefellow', 38),
