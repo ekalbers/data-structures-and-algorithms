@@ -111,6 +111,7 @@ const isCapitalized = (str) => {
       returnArr.push(item);
     }
   });
+
   return returnArr;
 };
 
