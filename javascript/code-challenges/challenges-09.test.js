@@ -129,7 +129,14 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, character) => {
-  arr.forEach(item => )
+  let x = false;
+  arr.forEach(item => {
+    let values = Object.values(item);
+    if (values[0] === character && values.length > 3) {
+      x = true;
+    }
+  });
+  return x;
 };
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
