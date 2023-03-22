@@ -24,3 +24,4 @@ To run your tests
 ### Python Table of Contents
 
 - [Class01 - array-reverse](./python/code_challenges/array-reverse/README.md)
+- [Class02 - array-insert-shift](./python/code_challenges/array-insert-shift/README.md)
