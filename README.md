@@ -26,3 +26,4 @@ To run your tests
 - [Class01 - array-reverse](./python/code_challenges/array-reverse/README.md)
 - [Class02 - array-insert-shift](./python/code_challenges/array-insert-shift/README.md)
 - [Class03 - array-binary-search](./python/code_challenges/array-binary-search/README.md)
+- [Class05 - linked-list](./python/code_challenges/linked-list/README.md)
