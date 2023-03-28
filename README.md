@@ -27,3 +27,4 @@ To run your tests
 - [Class02 - array-insert-shift](./python/code_challenges/array-insert-shift/README.md)
 - [Class03 - array-binary-search](./python/code_challenges/array-binary-search/README.md)
 - [Class05 - linked-list](./python/code_challenges/linked_list/README.md)
+- [Class06 - linked-list-insertions](./python/code_challenges/linked_list/insertions_README.md)
