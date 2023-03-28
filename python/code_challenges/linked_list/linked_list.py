@@ -38,9 +38,9 @@ class LinkedList:
 
     def insert_before(self, before, value):
         if self.includes(before):
-            current = self.head
-            if current.value is not before:
-                while current.next is not None and current.value is not before:
+            if self.head.value is not before:
+                current = self.head
+                while current.next:
                     if current.next.value is before:
                         current.set_next(Node(value, current.next))
                         break
@@ -58,6 +58,35 @@ class LinkedList:
             current.set_next(Node(value, current.next))
         else:
             raise TargetError
+
+    # def kth_from_end(self, k):
+    #     current = self.head
+    #     nodes = []
+    #     length = -1
+    #     while current:
+    #         nodes = nodes + [current.value]
+    #         length += 1
+    #         current = current.next
+    #     if length < length - k or length - k < 0:
+    #         raise TargetError
+    #     else:
+    #         return nodes[length - k]
+
+    def kth_from_end(self, k, current=None, length=0):
+        if length == 0:
+            current = self.head
+        if current:
+            index = length
+            x = self.kth_from_end(k, current.next, length+1)
+            if type(x) is int and x - index == k:
+                return current.value
+            else:
+                return x
+        else:
+            if length < length - k or length - k <= 0:
+                raise TargetError
+            else:
+                return length - 1
 
 
 class Node:
