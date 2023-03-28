@@ -28,3 +28,4 @@ To run your tests
 - [Class03 - array-binary-search](./python/code_challenges/array-binary-search/README.md)
 - [Class05 - linked-list](./python/code_challenges/linked_list/README.md)
 - [Class06 - linked-list-insertions](./python/code_challenges/linked_list/insertions_README.md)
+- [Class07 - linked-list-kth](./python/code_challenges/linked_list/kth_README.md)
