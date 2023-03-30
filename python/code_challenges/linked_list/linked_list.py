@@ -59,19 +59,6 @@ class LinkedList:
         else:
             raise TargetError
 
-    # def kth_from_end(self, k):
-    #     current = self.head
-    #     nodes = []
-    #     length = -1
-    #     while current:
-    #         nodes = nodes + [current.value]
-    #         length += 1
-    #         current = current.next
-    #     if length < length - k or length - k < 0:
-    #         raise TargetError
-    #     else:
-    #         return nodes[length - k]
-
     def kth_from_end(self, k, current=None, length=0):
         if length == 0:
             current = self.head
@@ -88,6 +75,56 @@ class LinkedList:
             else:
                 return length - 1
 
+    # @staticmethod
+    # def zip_lists(ll1, ll2):
+    #     link_list = LinkedList()
+    #     current1 = ll1.head
+    #     current2 = ll2.head
+    #     link_list.zip_lists_help(current1, current2)
+    #     return link_list
+    #
+    # def zip_lists_help(self, current1, current2):
+    #     if current1 and current2:
+    #         self.zip_lists_help(current1.next, current2.next)
+    #         self.insert(current2.value)
+    #         self.insert(current1.value)
+    #     elif current1:
+    #         self.zip_lists_help(current1.next, None)
+    #         self.insert(current1.value)
+    #     elif current2:
+    #         self.zip_lists_help(None, current2.next)
+    #         self.insert(current2.value)
+
+    @staticmethod
+    def zip_lists(ll1, ll2):
+        if ll1.head and ll2.head:
+            LinkedList.helper_zip_lists(ll1.head, ll2.head)
+        elif ll2.head:
+            return ll2
+        return ll1
+
+    @staticmethod
+    def helper_zip_lists(current1, current2):
+        if current1:
+            if current1.next and current2.next:
+                current1_next = current1.next
+                current2_next = current2.next
+                current1.set_next(current2)
+                current2.set_next(current1_next)
+                LinkedList.helper_zip_lists(current1_next, current2_next)
+            elif current2.next:
+                current1.set_next(current2)
+                current2.set_next(current2.next)
+                LinkedList.helper_zip_lists(None, current2.next)
+            elif current1.next and current2:
+                current2.set_next(current1.next)
+                current1.set_next(current2)
+            else:
+                current1.set_next(current2)
+        elif current2:
+            current2.set_next(current2.next)
+            LinkedList.helper_zip_lists(None, current2.next
+
 
 class Node:
     def __init__(self, value, _next=None):
@@ -99,4 +136,33 @@ class Node:
 
 
 class TargetError(Exception):
-    pass
+    print(Exception)
+
+
+
+
+@staticmethod
+def zip_lists(ll1, ll2):
+    if ll1.head and ll2.head:
+        LinkedList.helper_zip_lists(ll1.head, ll2.head)
+    elif ll2.head:
+        return ll2
+    return ll1
+
+@staticmethod
+def helper_zip_lists(current1, current2):
+    if current1.next and current2.next:
+        current1_next = current1.next
+        current2_next = current2.next
+        current1.set_next(current2)
+        current2.set_next(current1_next)
+        LinkedList.helper_zip_lists(current1_next, current2_next)
+    elif current2.next:
+        current1.set_next(current2)
+        current2.set_next(current2.next)
+        LinkedList.helper_zip_lists(None, current2.next)
+    elif current1.next and current2:
+        current2.set_next(current1.next)
+        current1.set_next(current2)
+    else:
+        current1.set_next(current2)
