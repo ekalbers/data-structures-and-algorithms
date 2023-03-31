@@ -1,5 +1,5 @@
 import pytest
-from data_structures.queue import Queue
+from code_challenges.stacks_and_queues.queue import Queue
 from data_structures.invalid_operation_error import InvalidOperationError
 
 
