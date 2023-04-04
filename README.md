@@ -32,3 +32,4 @@ To run your tests
 - [Class08 - linked-list-zip](./python/code_challenges/linked_list/zip_README.md)
 - [Class10 - stack and queue implementation](./python/code_challenges/stacks_and_queues/README.md)
 - [Class11 - PseudoQue](./python/code_challenges/stacks_and_queues_pseudo/README.md)
+- - [Class12 - AnimalShelter](./python/code_challenges/stacks_and_queues_animal_shelter/README.md)
