@@ -61,7 +61,7 @@
 
 ### Queue
 - enqueue
-  - make self.back equall to a new node with self.back as `next` parameter
+  - make self.back equal to a new node with self.back as `next` parameter
 - dequeue
   - traverse through queue using current variable until current.next is none
   - also track last node with last variable through traversal

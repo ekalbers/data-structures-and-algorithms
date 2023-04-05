@@ -7,40 +7,31 @@ class Queue:
     Put docstring here
     """
 
-    def __init__(self, front=None):
-        self.front = front
+    def __init__(self):
+        self.front = None
         self.back = None
 
     def enqueue(self, value):
+        node = Node(value)
         if self.front:
             if self.back:
-                self.back = Node(value, self.back)
+                self.back.set_next(node)
+                self.back = node
             else:
-                self.back = Node(value, self.front)
+                self.back.set_next(node)
+                self.back = node
         else:
-            node = Node(value)
             self.front = node
             self.back = node
 
     def dequeue(self):
         if self.front:
-            if not self.back:
-                front = self.front
-                self.front = None
+            return_value = self.front.value
+            if self.front.next:
+                self.front = self.front.next
             else:
-                current = self.back
-                last = current
-                front = current
-                while current.next:
-                    last = current
-                    front = current.next
-                    current = current.next
-                if last.next:
-                    last.set_next(None)
-                    self.front = last
-                else:
-                    self.front = None
-            return front.value
+                self.front = None
+            return return_value
         else:
             raise InvalidOperationError
 
@@ -54,8 +45,3 @@ class Queue:
         if self.front:
             return False
         return True
-
-
-    def some_method(self):
-        # method body here
-        pass
