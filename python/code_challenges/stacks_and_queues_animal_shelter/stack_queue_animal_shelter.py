@@ -1,21 +1,25 @@
 from code_challenges.stacks_and_queues.queue import Queue
 
 
-class AnimalShelter:
+class AnimalShelter(Queue):
     def __init__(self):
-        self.queue = Queue()
+        super().__init__()
 
-    def enqueue(self, obj):
-        self.queue.enqueue(obj)
-
-    def dequeue(self, pref):
-        current = self.queue.back
-        animal = None
-        while current:
-            if current.value.species == pref:
-                animal = current.value
-            current = current.next
-        return animal
+    def dequeue(self, pref=None):
+        temp_stack = Queue()
+        return_value = None
+        if not pref or self.front.value.species == pref:
+            return super().dequeue()
+        temp_stack.enqueue(super().dequeue())
+        while self.front:
+            current = self.front.value.species
+            if current == pref:
+                return_value = super().dequeue()
+            else:
+                temp_stack.enqueue(super().dequeue())
+        while temp_stack.front:
+            self.enqueue(temp_stack.dequeue())
+        return return_value
 
 
 class Cat:
