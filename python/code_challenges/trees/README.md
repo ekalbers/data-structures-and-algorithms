@@ -54,7 +54,7 @@
           - if it has left attribute call self.add with value and root.left as parameters
           - else set root.left equal to a new Node instance with value as the parameter
   - contains
-    - fucntion should have value and root parameters. value is the value to be checked for existence in the tree, root is a node within the tree, defaults to None
+    - function should have value and root parameters. value is the value to be checked for existence in the tree, root is a node within the tree, defaults to None
       - first check if root is None
         - if it is set root equal to self.root
       - check if value is equal to root.value
