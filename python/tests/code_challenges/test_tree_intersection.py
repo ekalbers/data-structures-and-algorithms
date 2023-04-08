@@ -1,6 +1,6 @@
 import pytest
 from code_challenges.tree_intersection import tree_intersection
-from data_structures.binary_tree import BinaryTree, Node
+from code_challenges.trees.binary_tree import BinaryTree, Node
 from code_challenges.stacks_and_queues.queue import Queue
 
 

@@ -34,3 +34,4 @@ To run your tests
 - [Class11 - PseudoQue](./python/code_challenges/stacks_and_queues_pseudo/README.md)
 - [Class12 - AnimalShelter](./python/code_challenges/stacks_and_queues_animal_shelter/README.md)
 - [Class13 - Brackets](./python/code_challenges/stacks_and_queues_brackets/README.md)
+- [Class15 - trees](./python/code_challenges/trees/README.md)
