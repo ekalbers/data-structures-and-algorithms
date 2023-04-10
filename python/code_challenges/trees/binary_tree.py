@@ -36,9 +36,24 @@ class BinaryTree:
         values.append(root.value)
         return values
 
-    def some_method(self):
-        # method body here
-        pass
+    def find_maximum_value(self, root=None, max_value=None):
+        if not root:
+            root = self.root
+            if root:
+                max_value = root.value
+            else:
+                return max_value
+        if root.value > max_value:
+            max_value = root.value
+        if root.left:
+            left_max = self.find_maximum_value(root.left, max_value)
+            if left_max > max_value:
+                max_value = left_max
+        if root.right:
+            right_max = self.find_maximum_value(root.right, max_value)
+            if right_max > max_value:
+                max_value = right_max
+        return max_value
 
 
 class Node:
