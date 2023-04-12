@@ -36,3 +36,4 @@ To run your tests
 - [Class13 - Brackets](./python/code_challenges/stacks_and_queues_brackets/README.md)
 - [Class15 - trees](./python/code_challenges/trees/README.md)
 - [Class16 - trees max](./python/code_challenges/trees/README_max.md)
+- [Class17 - trees breadth](./python/code_challenges/trees/README_breadth.md)
