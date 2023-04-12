@@ -14,10 +14,17 @@ def test_max_val():
 
     assert actual == expected
 
-@pytest.mark.skip('TODO')
+
+# @pytest.mark.skip('TODO')
 def test_max_happy():
     tree = BinaryTree()
-    tree.root = Node()
+    tree.root = Node(1)
+    tree.root.left = Node(5)
+    tree.root.right = Node(50)
+    tree.root.left.left = Node(7)
+    tree.root.left.right = Node(9)
+    tree.root.right.left = Node(11)
+    tree.root.right.right = Node(24)
 
 
 def test_max_break():
