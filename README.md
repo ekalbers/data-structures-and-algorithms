@@ -37,4 +37,5 @@ To run your tests
 - [Class15 - trees](./python/code_challenges/trees/README.md)
 - [Class16 - trees max](./python/code_challenges/trees/README_max.md)
 - [Class17 - trees breadth](./python/code_challenges/trees/README_breadth.md)
-- [Class1 - trees FizzBuzz](./python/code_challenges/trees/README_fizzbuzz.md)
+- [Class18 - trees FizzBuzz](./python/code_challenges/trees/README_fizzbuzz.md)
+- [Class26 - insertion sort](./python/code_challenges/sorting/insertion/README.md)
