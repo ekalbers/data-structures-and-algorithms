@@ -39,3 +39,4 @@ To run your tests
 - [Class17 - trees breadth](./python/code_challenges/trees/README_breadth.md)
 - [Class18 - trees FizzBuzz](./python/code_challenges/trees/README_fizzbuzz.md)
 - [Class26 - insertion sort](./python/code_challenges/sorting/insertion/README.md)
+- [Class27 - merge sort](./python/code_challenges/sorting/merge/README.md)
