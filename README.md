@@ -40,3 +40,4 @@ To run your tests
 - [Class18 - trees FizzBuzz](./python/code_challenges/trees/README_fizzbuzz.md)
 - [Class26 - insertion sort](./python/code_challenges/sorting/insertion/README.md)
 - [Class27 - merge sort](./python/code_challenges/sorting/merge/README.md)
+- [Class28 - comparisons](./python/code_challenges/sorting/comparisons/README.md)
