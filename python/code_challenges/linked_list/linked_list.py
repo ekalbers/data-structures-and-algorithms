@@ -107,9 +107,9 @@ class LinkedList:
 
 
 class Node:
-    def __init__(self, value, _next=None):
+    def __init__(self, value, next=None):
         self.value = value
-        self.next = _next
+        self.next = next
 
     def set_next(self, value):
         self.next = value
