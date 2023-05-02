@@ -41,5 +41,3 @@ To run your tests
 - [Class26 - insertion sort](./python/code_challenges/sorting/insertion/README.md)
 - [Class27 - merge sort](./python/code_challenges/sorting/merge/README.md)
 - [Class28 - comparisons](./python/code_challenges/sorting/comparisons/README.md)
-- [Class30 - hashtables](./python/code_challenges/hashtables/README.md)
-- [Class31 - hashtables repeated words](./python/code_challenges/hashtables/README_repeated_word.md)
