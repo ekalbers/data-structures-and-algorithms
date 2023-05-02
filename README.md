@@ -43,3 +43,4 @@ To run your tests
 - [Class28 - comparisons](./python/code_challenges/sorting/comparisons/README.md)
 - [Class30 - hashtables](./python/code_challenges/hashtables/README.md)
 - [Class31 - hashtables repeated words](./python/code_challenges/hashtables/README_repeated_word.md)
+- [Class32 - hashtables tree intersections](./python/code_challenges/hashtables/README_tree_intersection.md)
