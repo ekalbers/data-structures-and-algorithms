@@ -9,6 +9,11 @@ class Hashtable:
     def set(self, key, value):
         index = self.hash(key)
         current = self._buckets[index]
+        while current:
+            if current.value[0] == key:
+                current.value[1] = value
+                return
+            current = current.next
         new_node = Node([key, value], current)
         self._buckets[index] = new_node
 
