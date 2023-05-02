@@ -15,6 +15,7 @@ class Hashtable:
                 return
             current = current.next
         new_node = Node([key, value], self._buckets[index])
+        new_node = Node([key, value], current)
         self._buckets[index] = new_node
 
     def get(self, key):
