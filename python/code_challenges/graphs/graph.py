@@ -1,3 +1,5 @@
+from code_challenges.stacks_and_queues.queue import Queue
+
 class Graph:
     """
     Put docstring here
@@ -16,13 +18,26 @@ class Graph:
         self.adjacency_list[start].append(Edge(end, weight))
 
     def get_nodes(self):
-        return self.adjacency_list.keys()
+        return list(self.adjacency_list.keys())
 
     def get_neighbors(self, vertex):
         return self.adjacency_list[vertex]
 
     def size(self):
         return len(self.adjacency_list.keys())
+
+    def breadth_first(self, node):
+        queue = Queue()
+        queue.enqueue(node)
+        vertices = []
+        while not queue.is_empty():
+            current = queue.dequeue()
+            if current.value not in vertices:
+                vertices.append(current.value)
+            for vertex in self.adjacency_list[current]:
+                if vertex.vertex.value not in vertices:
+                    queue.enqueue(vertex.vertex)
+        return vertices
 
 
 class Vertex:
