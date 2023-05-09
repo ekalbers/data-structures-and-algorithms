@@ -45,3 +45,4 @@ To run your tests
 - [Class31 - hashtables repeated words](./python/code_challenges/hashtables/README_repeated_word.md)
 - [Class32 - hashtables tree intersections](./python/code_challenges/hashtables/README_tree_intersection.md)
 - [Class33 - hashtables left join](./python/code_challenges/hashtables/README_left_join.md)
+- [Class35 - graph implementation](./python/code_challenges/graphs/README.md)
