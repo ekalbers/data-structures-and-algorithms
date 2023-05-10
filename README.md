@@ -47,3 +47,4 @@ To run your tests
 - [Class33 - hashtables left join](./python/code_challenges/hashtables/README_left_join.md)
 - [Class35 - graph implementation](./python/code_challenges/graphs/README.md)
 - [Class36 - graph breadth first](./python/code_challenges/graphs/README_graph_breadth_first.md)
+- [Class37 - graph business trip](./python/code_challenges/graphs/README_graph_business_trip.md)

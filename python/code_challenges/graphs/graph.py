@@ -21,7 +21,7 @@ class Graph:
         return list(self.adjacency_list.keys())
 
     def get_neighbors(self, vertex):
-        return self.adjacency_list[vertex]
+        return list(self.adjacency_list[vertex])
 
     def size(self):
         return len(self.adjacency_list.keys())
